@@ -20,6 +20,8 @@ concurrency:
 jobs:
   shellcheck:
     name: Test
+    permissions:
+      contents: read
     uses: ./.github/workflows/check.yml
   build:
     name: Build
