@@ -8,6 +8,9 @@ on:
       - README.md
       - .github/workflows/hub.yml
 
+permissions:
+  contents: read
+
 jobs:
   dockerHubDescription:
     runs-on: ubuntu-latest
